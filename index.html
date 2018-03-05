@@ -23,32 +23,33 @@
 			</nav>
 			<section class="slider">
 				<h1 class="visually-hidden">Дизайн-студия Нердс</h1>
-				<div class="slider-1">
-					<img src="#" alt="Слайдер1">
-					<p class="text-slider-big">Долго, дорого,<br> скрупулезно.</p>
-					<p class="text-slider-small">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
-					<a class="button" href="#">Узнать больше</a>
-					<input type="radio" name="slider1" checked>
-					<input type="radio" name="slider2">
-					<input type="radio" name="slider3">
-				</div>
-				<div class="slider-2">
-					<img src="#" alt="Слайдер2">
-					<p class="text-slider-big">Любим математику,<br> как никто другой</p>
-					<p class="text-slider-small">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
-					<a class="button" href="#">Узнать больше</a>
-					<input type="radio" name="slider1">
-					<input type="radio" name="slider2" checked>
-					<input type="radio" name="slider3">
-				</div>
-				<div class="slider-3">
-					<img src="#" alt="Слайдер3">
-					<p class="text-slider-big">Только ночь, <br> только хардкор</p>
-					<p class="text-slider-small">Работать днем,  как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
-					<a class="button" href="#">Узнать больше</a>
-					<input type="radio" name="slider1">
-					<input type="radio" name="slider2">
-					<input type="radio" name="slider3" checked>
+				<div class="slides">
+					<div class="slide">
+						<h2 class="slide-title"></h2>
+						<img src="#" alt="Слайдер1" class="slide-img">
+						<p class="text-slider">Долго, дорого,<br> скрупулезно.</p>
+						<p class="slide-description">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
+						<a class="slide-button" href="#">Узнать больше</a>
+					</div>
+					<div class="slide">
+						<h2 class="slide-title"></h2>
+						<img src="#" alt="Слайдер2" class="slide-img">
+						<p class="text-slider">Любим математику,<br> как никто другой</p>
+						<p class="slide-description">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
+						<a class="slide-button" href="#">Узнать больше</a>
+					</div>
+					<div class="slide">
+						<h2 class="slide-title"></h2>
+						<img src="#" alt="Слайдер3" class="slide-img">
+						<p class="text-slider">Только ночь, <br> только хардкор</p>
+						<p class="slide-description">Работать днем,  как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+						<a class="slide-button" href="#">Узнать больше</a>
+					</div>
+					<div class="slider-controls">
+						<span class="slider-control"></span>
+						<span class="slider-control"></span>
+						<span class="slider-control"></span>
+					</div>
 				</div>
 			</section>
 		</div>
@@ -74,36 +75,56 @@
 				</li>
 			</ul>
 		</section> 
-		<section class="preview">
-			<h2 class="slogan"> Мы-маленькая, но гордая дизайн-студия из Краснодара.</h2>
-			<p>Исповедуем принципы минимализма и чистоты. Ставим математически расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-			<p>Выполняем заказы на разработку:</p>
-			<p>-Веб-сайтов любой сложности</p>
-			<p>-Мобильных приложений для IOS и Android</p>
-			<p>-Слайдшоу и видео для корпоративных презентаций</p>
-			<div class="logo">
-				<img src="#" alt="logo">
+		<section class="info">
+			<div class="info-description">
+				<h2 class="info-title"> Мы-маленькая, но гордая дизайн-студия из Краснодара.</h2>
+				<p class="info-lead">Исповедуем принципы минимализма и чистоты. Ставим математически расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+				<b class="info-features-title">Выполняем заказы на разработку:</b>
+				<ul class="info-features">
+					<li>Веб-сайтов любой сложности</li>
+					<li>Мобильных приложений для IOS и Android</li>
+					<li>Слайдшоу и видео для корпоративных презентаций</li>
+				</ul>
 			</div>
-			<p>с 2004 года любим точность во всем:</p>
-			<table class="number">
-				<tr>
-					<td>146%</td>
-					<td>100%</td>
-					<td>50%</td>
-				</tr>
-				<tr>
-					<td>Уровень самоотдачи</td>
-					<td>Соблюдение сроков</td>
-					<td>Минимальная предоплата</td>
-				</tr>
-			</table>
+			<div class="info-stats">
+				<img src="#" alt="logo" class="info-logo">
+				<b class="nfo-features-title">с 2004 года любим точность во всем:</b>
+				<table class="info-stats-table">
+					<tr>
+						<td>146%</td>
+						<td>100%</td>
+						<td>50%</td>
+					</tr>
+					<tr>
+						<td>Уровень самоотдачи</td>
+						<td>Соблюдение сроков</td>
+						<td>Минимальная предоплата</td>
+					</tr>
+				</table>
+			</div>
 		</section>
 		<section class="carousel">
 			<ul class="carousel-list">
-				<li class="carousel-item"><a href="https://htmlacademy.ru/intensive/htmlcss">HTML academy</a></li>
-				<li class="carousel-item">Borodinski</li>
-				<li class="carousel-item">PINK</li>
-				<li class="carousel-item">Mishka</li>
+				<li class="carousel-item">
+					<a href="https://htmlacademy.ru/intensive/htmlcss">HTML academy
+						<img src="#" alt="HTML academy">
+					</a>
+				</li>
+				<li class="carousel-item">Borodinski
+					<a href="#">
+						<img src="#" alt="Borodinski">
+					</a>
+				</li>
+				<li class="carousel-item">PINK
+					<a href="#">
+						<img src="#" alt="PINK">
+					</a>
+				</li>
+				<li class="carousel-item">Mishka
+					<a href="#">
+						<img src="#" alt="Mishka">
+					</a>
+				</li>
 			</ul>
 		</section>
 	</main>
