@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Нёрдс</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header class="header">
@@ -62,7 +63,7 @@
 					<img src="img/features-1.jpg" alt="Веб-сайты" width="300" height="146">
 					<h3>ВЕБ-САЙТЫ</h3>
 					<p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
-					<a  class="button" href="#">ЗАКАЗАТЬ</a>
+					<a  class="button" href="catalog.html">ЗАКАЗАТЬ</a>
 				</li>
 				<li class="features-item">
 					<img src="img/features-2.jpg" alt="Приложения" width="300" height="146">
@@ -158,9 +159,23 @@
 		</div>
 	</footer>
 	<section class="modal">
-		<b>Напишите нам</b>
-		<!--Здесь будет форма-->
-		<span class="modal-close">x</span>
+		<p class="modal-info">Напишите нам</p>
+		<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+			<p class="appointment-info">
+				<label for="appointment-name">Ваше имя:</label>
+				<input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+			</p>
+			<p class="appointment-info">
+				<label for="appointment-email">Ваш e-mail:</label>
+				<input id="appointment-email" type="text" name="email" value="" placeholder="email@example.com">
+			</p>
+			<p class="appointment-info">
+				<label for="appointment-text"></label>Текст письма:
+				<input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
+			</p>
+			<button class="button" type="submit">Отправить</button>	
+		</form>
+		<button class="modal-close" type="button">Закрыть</button>
 	</section>
 	<!--<p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>-->
 </body>
