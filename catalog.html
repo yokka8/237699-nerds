@@ -30,23 +30,22 @@
 			<h2 class="visually-hidden">Фильтр товаров</h2>
 			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 				<fieldset>
-					<legend>Стоимость:
+					<legend>Стоимость:</legend>
 						<input type="range" name="range-min">
 						<input type="range" name="range-max">
-					</legend>
 				</fieldset>
 				<fieldset>
 					<legend>Сетка:</legend>
 					<ul>
 						<li class="filter-option">
-							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" checked id="filter-grid">
-							<label for="filter-grid">Адаптивная</label></li>
+							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" checked id="filter-adaptive">
+							<label for="filter-adaptive">Адаптивная</label></li>
 						<li class="filter-option">
-							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fixed" id="filter-grid">
-							<label for="filter-grid">Фиксированная</label></li>
+							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fixed" id="filter-fixed">
+							<label for="filter-fixed">Фиксированная</label></li>
 						<li class="filter-option">
-							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="rubber" id="filter-grid">
-							<label for="filter-grid">Резиновая</label></li>
+							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubber">
+							<label for="filter-rubber">Резиновая</label></li>
 					</ul>
 				</fieldset>
 				<fieldset>
@@ -172,11 +171,11 @@
 			</p>
 			<p class="appointment-info">
 				<label for="appointment-email">Ваш e-mail:</label>
-				<input id="appointment-email" type="text" name="email" value="" placeholder="email@example.com">
+				<input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
 			</p>
 			<p class="appointment-info">
 				<label for="appointment-text"></label>Текст письма:
-				<input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
+				<textarea id="appointment-text" name="text" placeholder="В свободной форме"></textarea>
 			</p>
 			<button class="button" type="submit">Отправить</button>	
 		</form>
