@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Нёрдс</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -19,13 +21,14 @@
 					<li><a href="#">Контакты </a></li>
 				</ul>
 				<ul class="cart">
-					<li> <a href="#">Корзина</a></li>
+					<li><a href="#">Корзина</a></li>
 				</ul>
 			</nav>
 			<section class="slider">
 				<h1 class="visually-hidden">Дизайн-студия Нердс</h1>
 				<div class="slides">
 					<div class="slide">
+						<!--h2 почему?-->
 						<h2 class="slide-title"></h2>
 						<img src="img/slider-1.png" alt="Слайдер1" class="slide-img" width="698" height="413">
 						<p class="text-slider">Долго, дорого,<br> скрупулезно.</p>
@@ -47,9 +50,9 @@
 						<a class="slide-button" href="#">Узнать больше</a>
 					</div>
 					<div class="slider-controls">
-						<button class="slider-btn"></button>
-						<button class="slider-btn"></button>
-						<button class="slider-btn"></button>
+						<button class="slider-btn">Первый слайд</button>
+						<button class="slider-btn">Второй слайд</button>
+						<button class="slider-btn">Третий слайд</button>
 					</div>
 				</div>
 			</section>
@@ -60,6 +63,7 @@
 			<h2 class="visually-hidden">Услуги</h2>
 			<ul class="features-list">
 				<li class="features-item">
+					<!--это контентные изображения?-->
 					<img src="img/features-1.jpg" alt="Веб-сайты" width="300" height="146">
 					<h3>ВЕБ-САЙТЫ</h3>
 					<p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
@@ -92,14 +96,14 @@
 			</div>
 			<div class="info-stats">
 				<img src="img/info-logo.png" alt="logo" class="info-logo" width="360" height="208">
-				<b class="nfo-features-title">с 2004 года любим точность во всем:</b>
+				<b class="info-features-title">с 2004 года любим точность во всем:</b>
 				<table class="info-stats-table">
-					<tr>
+					<tr class="table-percent">
 						<td>146%</td>
 						<td>100%</td>
 						<td>50%</td>
 					</tr>
-					<tr>
+					<tr class="table-text">
 						<td>Уровень самоотдачи</td>
 						<td>Соблюдение сроков</td>
 						<td>Минимальная предоплата</td>
@@ -149,7 +153,7 @@
 					<p>Скидка 10% для друзей из социальных сетей.</p>
 				</div>
 				<div class="social-icon">
-					<ul>
+					<ul class="">
 						<li class="social-button"><a href="#">VK</a></li>
 						<li class="social-button"><a href="#">Facebook</a></li>
 						<li class="social-button"><a href="#">Instagram</a></li>

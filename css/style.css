@@ -1,3 +1,22 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.header{
+	background-color: #eeeeee;
+	/*не подключается*/
+	background-image: url("img/grey_back.png");
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -7,4 +26,87 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-navigation {
+	font-size: 16px;
+	line-height: 30px;
+	color: #000000;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.site-navigation, 
+.cart {
+	list-style: none;
+}
+
+.site-navigation a,
+.cart a {
+	color: #000000;
+}
+
+.site-navigation a:hover,
+.cart a:hover {
+	color: #fb565a; 
+}
+
+.site-navigation a:focus,
+.cart a:focus {
+	color: rgba(0,0,0,0.3); 
+}
+
+.text-slider {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+}
+
+.slide-button {
+	font: inherit;
+
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	background-color: #fb565a;
+	border: none;
+}
+
+.slide-button a:hover {
+	background-color: ;
+}
+.slide-button a:focus{
+	background-color: ;
+}
+.slide-button a:active{
+	background-color: ;
+}
+
+.features-list {
+	list-style: none;
+}
+
+.features-list h3{
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 500;
+}
+
+.info-features-title {
+	text-transform: uppercase;
+}
+
+.table-percent {
+	font-size: 45px;
+	line-height: 10,06;
+}
+.table-text {
+	font-size: 16px;
+	line-height: 18px;
 }
