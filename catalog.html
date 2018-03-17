@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<header class="main-header">
+	<header class="header">
 		<div class="container">
 			<nav class="main-navigation">
 				<a class="main-header-logo" href="index.html">
@@ -27,7 +27,7 @@
 			<h1 class="page-title">Магазин готовых шаблонов</h1>
 		</div>
 	</header>
-	<main class="container">
+	<main class="main-container">
 		<section class="filters-col">
 			<h2 class="visually-hidden">Фильтр товаров</h2>
 			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -44,7 +44,7 @@
 							<label for="filter-adaptive">Адаптивная</label></li>
 						<li class="filter-option">
 							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fixed" id="filter-fixed">
-							<label for="filter-fixed">Фиксированная</label></li>
+							<label for="filter-fixed" disabled>Фиксированная</label></li>
 						<li class="filter-option">
 							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubber">
 							<label for="filter-rubber">Резиновая</label></li>
@@ -72,7 +72,7 @@
 			<h2 class="visually-hidden">Выбор макета</h2>
 			<span>Сортировать:</span>
 			<ul class="sorting-list">
-				<li><a href="#">По цене</a></li>
+				<li class="sorting-list-current">По цене</li>
 				<li><a href="#">По типу</a></li>
 				<li><a href="#">По названию</a></li>
 			</ul>
@@ -86,7 +86,7 @@
 					<div>
 						<h3><a href="#">SEDONA</a></h3>
 						<p>Информационный сайт для туристов</p>
-						<a href="#" class="button">9 900 руб.</a>
+						<a href="#" class="catalog-btn">9 900 руб.</a>
 					</div>
 				</div>
 				<div class="catalog-item">
@@ -94,7 +94,7 @@
 					<div>
 						<h3><a href="#">PINK APP</a></h3>
 						<p>Продуктовый лендинг приложения для iOS и Android</p>
-						<a href="#" class="button">9 900 руб.</a>
+						<a href="#" class="catalog-btn">9 900 руб.</a>
 					</div>
 				</div>
 				<div class="catalog-item">
@@ -102,7 +102,7 @@
 					<div>
 						<h3><a href="#">BARBERSHOP</a></h3>
 						<p>Сайт для салона красоты. Для мужчин, да.</p>
-						<a href="#" class="button">9 900 руб.</a>
+						<a href="#" class="catalog-btn">9 900 руб.</a>
 					</div>
 				</div>
 				<div class="catalog-item">
@@ -110,7 +110,7 @@
 					<div>
 						<h3><a href="#">MISHKA</a></h3>
 						<p>Интернет-магазин вязанных игрушек</p>
-						<a href="#" class="button">9 900 руб.</a>
+						<a href="#" class="catalog-btn">9 900 руб.</a>
 					</div>
 				</div>
 				<div class="catalog-item">
@@ -118,7 +118,7 @@
 					<div>
 						<h3><a href="#">A PLUS</a></h3>
 						<p>Лендинг курсов повышения квалификации</p>
-						<a href="#" class="button">9 900 руб.</a>
+						<a href="#" class="catalog-btn">9 900 руб.</a>
 					</div>
 				</div>
 				<div class="catalog-item">
@@ -126,7 +126,7 @@
 					<div>
 						<h3><a href="#">КВАСТ</a></h3>
 						<p>Промо-сайт производителя крафтового кваса</p>
-						<a href="#" class="button">9 900 руб.</a>
+						<a href="#" class="catalog-btn">9 900 руб.</a>
 					</div>
 				</div>
 			</div>
@@ -140,25 +140,25 @@
 	</main>
 	<footer class="footer">
 		<div class="map">
+			<img src="img/map.jpg" alt="Карта">
 			<div class="write-us">
-				<img src="img/map.jpg">
-				<p>Nerds design studio</p>
+				<b>Nеrds design studio</b>
 				<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 				<p>тел. +7(812)275-75-75</p>
-				<a class="button" href="#">Напишите нам</a>
+				<a class="write-btn" href="#">Напишите нам</a>
 			</div>
 		</div>
 		<div class="footer-row">
 			<div class="container">
 				<div class="footer-text">
-					<p>Давайте дружить, это выгодно!</p>
+					<b>Давайте дружить, это выгодно!</b>
 					<p>Скидка 10% для друзей из социальных сетей.</p>
 				</div>
 				<div class="social-icon">
 					<ul>
 						<li class="social-button"><a href="#">VK</a></li>
-						<li class="social-button"><a href="#">FB</a></li>
-						<li class="social-button"><a href="#">INST</a></li>
+						<li class="social-button"><a href="#">Facebook</a></li>
+						<li class="social-button"><a href="#">Instagram</a></li>
 					</ul>
 				</div>
 			</div>
@@ -176,10 +176,10 @@
 				<input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
 			</p>
 			<p class="appointment-info">
-				<label for="appointment-text"></label>Текст письма:
+				<label for="appointment-text">Текст письма:</label>
 				<textarea id="appointment-text" name="text" placeholder="В свободной форме"></textarea>
 			</p>
-			<button class="button" type="submit">Отправить</button>	
+			<button class="write-btn" type="submit">Отправить</button>	
 		</form>
 		<button class="modal-close" type="button">Закрыть</button>
 	</section>

@@ -13,8 +13,16 @@ body {
 
 .header{
 	background-color: #eeeeee;
-	/*не подключается*/
-	background-image: url("img/grey_back.png");
+	background-image: url("../img/grey_back.jpg");
+	background-position: 0 0;
+  	background-repeat: repeat;
+}
+
+a.main-header-logo:hover {
+	opacity: 0.8;
+}
+a.main-header-logo:focus {
+	opacity: 0.3;
 }
 
 .visually-hidden {
@@ -31,7 +39,6 @@ body {
 a {
 	text-decoration: none;
 }
-
 .main-navigation {
 	font-size: 16px;
 	line-height: 30px;
@@ -39,35 +46,32 @@ a {
 	text-transform: uppercase;
 	font-weight: 500;
 }
-
 .site-navigation, 
 .cart {
 	list-style: none;
 }
-
 .site-navigation a,
 .cart a {
 	color: #000000;
 }
-
 .site-navigation a:hover,
 .cart a:hover {
 	color: #fb565a; 
 }
-
 .site-navigation a:focus,
 .cart a:focus {
 	color: rgba(0,0,0,0.3); 
 }
+
 
 .text-slider {
 	font-size: 55px;
 	line-height: 55px;
 	font-weight: 500;
 }
-
 .slide-button {
 	font: inherit;
+	line-height: 18px;
 
 	text-align: center;
 	color: #ffffff;
@@ -77,25 +81,79 @@ a {
 	background-color: #fb565a;
 	border: none;
 }
+.slide-description{
+	color: #283136;
+	font-size: 16px;
+	line-height: 24px;
+}
+.slide-button:hover {
+	background-color: #e74246;
+}
+.slide-button:focus {
+	background-color: #d7373b;
+	color: rgba(0,0,0,0.3);
+}
 
-.slide-button a:hover {
-	background-color: ;
+
+.main-container{
+	color: #000000;
+
+	background-color: #ffffff;
+	background-image: url("../img/white_back.jpg");
+	background-position: 0 0;
+	background-repeat: repeat;
 }
-.slide-button a:focus{
-	background-color: ;
-}
-.slide-button a:active{
-	background-color: ;
-}
+
 
 .features-list {
 	list-style: none;
 }
-
-.features-list h3{
+.features-list h3 {
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 500;
+}
+.features-list p {
+	font-size: 16px;
+	line-height: 24px;
+	color: #283136;
+}
+
+.features-item a {
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase; 
+}
+.features-btn-red{
+	background-color: #fb565a;
+}
+.features-btn-red:hover {
+	background-color: #e74246;
+}
+.features-btn-red:focus {
+	background-color: #e74246
+	color: rgba(255,255,255,0.3);
+}
+.features-btn-green{
+	background-color: #00ca74;
+}
+.features-btn-green:hover {
+	background-color: #00bc6c;
+}
+.features-btn-green:focus {
+	background-color: #00aa62;
+	color: rgba(255,255,255,0.3);
+}
+.features-btn-yellow {
+	background-color: #efc84a;
+}
+.features-btn-yellow:hover {
+	background-color: #eab534;
+}
+.features-btn-yellow:focus {
+	background-color: #e5a722;
+	color: rgba(255,255,255,0.3);
 }
 
 .info-features-title {
@@ -109,4 +167,229 @@ a {
 .table-text {
 	font-size: 16px;
 	line-height: 18px;
+}
+.info-features {
+	list-style: none;
+}
+
+.carousel-list {
+	list-style: none;
+}
+.carousel-item a {
+	opacity:  0.2; 
+}
+.carousel-item a:hover {
+	opacity: 1;
+}
+
+.carousel-item a:focus {
+	opacity:  0.1;
+}
+
+/*catalog*/
+.filter-option,
+.sorting-list,
+.sorting-direction {
+	list-style: none;
+}
+
+.filter fieldset {
+  border: none;
+}
+.filter legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/*цвет не меняет?*/
+.filter-input:hover + label{
+	color: #283136;
+}
+.filter-input:focus + label {
+	color: #000000;
+}
+
+.filter-input:disabled + label {
+	color: #283136;
+	opacity: 0.3;
+}
+
+.catalog-col span {
+	font-size: 18px;
+	line-height: 18px; 
+	text-transform:uppercase;
+	font-weight: 700;
+} 
+/*цвет правильно?*/
+.sorting-list a {
+	color: rgba(0,0,0, 0.3);
+}
+.sorting-list a:hover {
+	color: rgba(0,0,0, 0.6);
+}
+.sorting-list a:focus {
+	color: #000000;
+}
+.sorting-list-current {
+	color: #000000;
+}
+
+.filter-button {
+	background-color: #eeeeee;
+	font-size: 18px;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.filter-button:hover {
+	background-color: #dfdfdf; 
+}
+.filter-button:focus {
+	background-color: #d5d5d5;
+	color: rgba(0,0,0,0.3);
+}
+
+.catalog-item h3 {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	text-align: center; 
+	text-transform: uppercase;
+	color: #000000;
+}
+.catalog-item p {
+	color: #666666;
+	line-height: 16px;
+	line-height: 18px;
+	text-align: center;
+}
+.catalog-btn {
+	background-color: #fb565a;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.catalog-btn:hover {
+	background-color: #e74246;
+}
+.catalog-btn:focus{
+	background-color: #d7373b;
+}
+
+.pagination-list {
+	list-style: none;
+}
+.pagination-list a {
+	font-size: 16px;
+	line-height: 18px;
+	color: #000000;
+	text-align: center;
+
+	background-color: #eeeeee;
+}
+.pagination-list a:hover {
+	background-color: #dfdfdf;
+}
+.pagination-list a:focus {
+	background-color: #d5d5d5;
+	color: rgba(0,0,0,0.3);
+}
+
+
+.footer {
+	color: #000000;
+
+	background-color: #ffffff;
+	background-image: url("../img/footer_back.jpg");
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+.write-us b {
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.write-us p {
+	color: #666666;
+	font-size: 16px;
+	line-height: 18px; 
+}
+
+.write-btn {
+	font: inherit;
+
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	background-color: #fb565a;
+	border: none;
+}
+
+.footer-text b {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 700;
+	color: #000000; 
+}
+
+.footer-text p {
+	font-size: 16px;
+	line-height: 22px;
+	color: #444444;
+}
+
+.social-icon ul {
+	list-style: none;
+}
+
+.social-icon a {
+	text-align: center;
+	color: #ffffff;
+	background-color: #e1e1e1;
+}
+.social-icon a:hover {
+	background-color: #e74246;
+}
+.social-icon a:focus {
+	background-color: #d7373b;
+}
+
+
+.modal-info {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+}
+.appointment-form label {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+}
+/*не меняет*/
+.appointment-form input[type="text"],
+.appointment-form input[type="email"],
+.appointment-form textarea {
+	font: inherit;
+	border-color: #d7dcde;
+	color: rgba(68,68,68,0.5);
+}
+
+.appointment-form input:hover,
+.appointment-form input:hover,
+.appointment-form textarea:hover {
+	border-color: #b4b9bb; 
+	color: rgba(68,68,68, 0.5);
+}
+
+.appointment-form input:focus,
+.appointment-form input:focus,
+.appointment-form textarea:focus {
+	border-color: #000000;
+	color: #444444;
 }
