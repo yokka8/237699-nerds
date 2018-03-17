@@ -81,11 +81,6 @@ a {
 	background-color: #fb565a;
 	border: none;
 }
-.slide-description{
-	color: #283136;
-	font-size: 16px;
-	line-height: 24px;
-}
 .slide-button:hover {
 	background-color: #e74246;
 }
@@ -94,6 +89,11 @@ a {
 	color: rgba(0,0,0,0.3);
 }
 
+.slide-description {
+	color: #283136;
+	font-size: 16px;
+	line-height: 24px;
+}
 
 .main-container{
 	color: #000000;
@@ -156,7 +156,24 @@ a {
 	color: rgba(255,255,255,0.3);
 }
 
+.info-title {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+	text-align: left;
+}
+.info-lead{
+	font-size: 16px;
+	line-height: 24px;
+	color: #283136;
+}
+.info-features {
+	list-style: none;
+}
 .info-features-title {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 700;
 	text-transform: uppercase;
 }
 
@@ -167,9 +184,7 @@ a {
 .table-text {
 	font-size: 16px;
 	line-height: 18px;
-}
-.info-features {
-	list-style: none;
+	color: #283136;
 }
 
 .carousel-list {
