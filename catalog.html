@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body class="inner-page">
 	<header class="header">
 		<div class="container">
 			<nav class="main-navigation">
@@ -28,13 +28,28 @@
 		</div>
 	</header>
 	<main class="main-container">
+		<div class="catalog-colums">
 		<section class="filters-col">
 			<h2 class="visually-hidden">Фильтр товаров</h2>
 			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
-				<fieldset>
+				<fieldset class="filter-item">
 					<legend>Стоимость:</legend>
-						<input type="range" name="range-min">
-						<input type="range" name="range-max">
+					<div class="range-filter">
+						<div class="range-controls">
+							<div class="scale">
+								<div class="bar"></div>
+							</div>
+							<div class="toggle toggle-min"></div>
+							<div class="toggle toggle-max"></div>
+						</div>
+						<div class="price-controls">
+							<label class="min-price">от
+							<input type="text" name="min-price" value="0">
+							</label>
+							<label class="max-price">до
+							<input type="text" name="max-price" value="15000"></label>
+						</div>
+					</div>
 				</fieldset>
 				<fieldset>
 					<legend>Сетка:</legend>
@@ -44,7 +59,7 @@
 							<label for="filter-adaptive">Адаптивная</label></li>
 						<li class="filter-option">
 							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fixed" id="filter-fixed">
-							<label for="filter-fixed" disabled>Фиксированная</label></li>
+							<label for="filter-fixed">Фиксированная</label></li>
 						<li class="filter-option">
 							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubber">
 							<label for="filter-rubber">Резиновая</label></li>
@@ -134,9 +149,10 @@
 				<li class="pagination-item pagination-item-current"><a href="#">1</a></li>
 				<li class="pagination-item"><a href="#">2</a></li>
 				<li class="pagination-item"><a href="#">3</a></li>
-				<li class="pagination-item"><a href="#">Следующая</a></li>
+				<li class="pagination-item pagination-item-next "><a href="#">Следующая</a></li>
 			</ul>
 		</section>
+		</div>
 	</main>
 	<footer class="footer">
 		<div class="map">
@@ -164,7 +180,7 @@
 			</div>
 		</div>
 	</footer>
-	<section class="modal">
+	<section class="modal modal-wrt-us">
 		<p class="modal-info">Напишите нам</p>
 		<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
 			<p class="appointment-info">
