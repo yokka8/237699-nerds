@@ -374,11 +374,18 @@ a.main-header-logo:focus {
 	padding: 0;
 }
 .info-features li {
+	position: relative;
+
+	margin-left: 40px;
 	margin-bottom: 25px;
 }
 
 .info-features li::before {
 	content: "";
+	position: absolute;
+
+	top: 10px;
+	left: -40px;
 
 	width: 25px;
 	height: 2px;
@@ -871,6 +878,8 @@ a.main-header-logo:focus {
 }
 
 .write-contact {
+	display: block;
+	width: 210px;
 	color: #666666;
 	font-size: 16px;
 	line-height: 18px;
@@ -878,25 +887,26 @@ a.main-header-logo:focus {
 	padding: 0;
 
 	padding-left: 50px;
-	padding-right: 50px;
 	padding-top: 25px; 
 }
 
 .write-btn {
+	display: block;
 	font: inherit;
 	margin: 0;
 	padding: 0;
 
-	text-align: center;
 	color: #ffffff;
-	vertical-align: middle;
 	text-transform: uppercase;
 
 	background-color: #fb565a;
 	border: none;
-	width: 220px;
-	padding: 15px 45px;
+	width: 130px;
+	padding: 14px 47px;
 	border-radius: 3px;
+	/*margin-bottom: 0;*/
+	margin: 30px 0 0 50px;
+	margin-bottom: 0;
 }
 .footer-row .container {
 	display: flex;
@@ -951,7 +961,7 @@ a.main-header-logo:focus {
 	background-color: #e1e1e1;
 	border-radius: 50%;
 }
-/*что-то криво цвета*/
+
 .social-button:hover {
 	background-color: #e74246;
 }
@@ -960,10 +970,10 @@ a.main-header-logo:focus {
 	background-color: #d7373b;
 }
 .social-button:hover path {
-	background-color: #ffffff;
+	fill: #ffffff;
 }
 .social-button:focus path {
-	background-color: rgba(227,115,118, 0.3);
+	fill: rgba(227,115,118, 0.3);
 }
 .social-icon a {
 	text-align: center;
@@ -1060,7 +1070,7 @@ a.main-header-logo:focus {
 	color: #444444;
 
 }
-.modal .write-btn {
+.modal-write-btn {
 	width: 260px;
 	padding: 13px;
 	border-radius: 3px;
