@@ -833,6 +833,7 @@ a.main-header-logo:focus {
 	background-color: #ffffff;
 	margin-top: 80px;
 }
+/*карта вылезает за макет*/
 .map {
 	background-image: url(../img/map.jpg);
 	background-repeat: no-repeat;
@@ -841,11 +842,14 @@ a.main-header-logo:focus {
 	width: 100%;
 	height: 416px;
 }
-/*не понимаю как его выровнять*/
+
 .write-us {
+	position: relative;
 	width: 319px;
 	height: 308px;
 	background-color: #ffffff;
+	left: 140px;
+	top: 55px;
 }
 .write-title {
 	font-size: 18px;
