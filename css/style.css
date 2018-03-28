@@ -412,6 +412,13 @@ a.main-header-logo:focus {
 	line-height: 10.06px;
 	font-weight: 700;
 }
+.table-percent span {
+	font-size: 23px;
+	line-height: 10.06px;
+	font-weight: 700;
+
+	vertical-align: top;/**/
+}
 .table-text {
 	font-size: 16px;
 	line-height: 18px;
