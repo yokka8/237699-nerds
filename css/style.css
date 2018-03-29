@@ -463,7 +463,7 @@ a.main-header-logo:focus {
 .carousel-list {
 	list-style: none;
 	display: flex;
-	align-items: center;
+	justify-content: space-between;
 	background-image: url(..//img/grey_line.png);
 	background-position: bottom;
 	background-repeat: no-repeat;
@@ -475,7 +475,25 @@ a.main-header-logo:focus {
 	margin-left: 30px;
 
 }
-.carusel-item li {
+.carousel-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 260px;
+	height: 180px;
+}
+/*
+.carousel-item::before {
+	content: "";
+
+	width: 2px;
+	height: 52px;
+	color: #eeeeee;
+	transform: rotate(90deg);
+	top: 500px;
+	right: 30px;
+}*/
+.carousel-item li {
 	width: 260px;
 }
 .carousel-item a {
@@ -787,18 +805,33 @@ a.main-header-logo:focus {
 }
 .catalog-item {
 	position: relative;
-	width: 360px;
+	width: 358px;
 	margin-bottom: 33px;
 	margin-right: 40px;
+	border: 1px solid #e5e5e5;
 }
+
 .catalog-item-info {
 	position: absolute;
 	margin: 0;
 	width: 240px;
 	height: 160px;
+	top: 384px;
+	left: 0px;
 	background-color: #eeeeee;
 	padding: 28px 60px 43px 60px;
 }
+/*без ховера норм)
+.catalog-item-info:hover {
+	position: absolute;
+	margin: 0;
+	width: 240px;
+	height: 160px;
+	top: 384px;
+	left: 0px;
+	background-color: #eeeeee;
+	padding: 28px 60px 43px 60px;
+}*/
 .catalog-item::before {
 	content: "";
 	display: block;
@@ -858,6 +891,7 @@ a.main-header-logo:focus {
 	margin-bottom: 50px;
 	margin-left: 20px;
 }
+/*кнопки цвет не меняют(((*/
 .catalog-btn:hover {
 	background-color: #fb565a;
 	color: #ffffff;
