@@ -113,9 +113,13 @@ a.main-header-logo:focus {
 .slider {
 	position: relative;
 }
+.slides {
+	margin: 0;
+	padding: 0;
+}
 .slide {
 	display: none;
-	padding: 70px 0 85px 0;	/*не поняла как их измерили*/
+	padding: 70px 0 80px 0;	/*не поняла как их измерили*/
 }
 .slide:nth-child(1) {
 	display: block; 
@@ -200,9 +204,7 @@ a.main-header-logo:focus {
 	width: 18px;
 	height: 18px;
 	padding: 8px; /*Переключатели маленькие, поэтому мы увеличим зону нажатия с помощью паддинга.
-
 */
-
 	border-radius: 50%; 
 	cursor: pointer; /*дадим курсор «указатель».*/
 }
@@ -221,18 +223,23 @@ a.main-header-logo:focus {
 	background: #ffffff;
 	border-radius: 50%;
 }
-/*не похоже)))*/
+
 .slider-controls .active::before {
 	content: "";
+
 	position: absolute;
-	top: 12px;
-	left: 12px;
+
+	top: 50%;
+	left: 50%;
 	z-index: 2;
-	width: 6px;
-	height: 6px;
-	background-color: #ffffff;
-	border: 2px solid #d2d2d2;
-	border-radius: 50%;
+
+	width: 4px;
+  	height: 4px;
+  	margin: -4px;
+  
+  	background-color: inherit;
+  	border: 2px solid #c1c1c1;
+  	border-radius: 50%;
 
 }
 .main-container { 
@@ -258,7 +265,7 @@ a.main-header-logo:focus {
 	width: 300px;
 
 	margin-right: 100px;
-	margin-bottom: 120px;
+	margin-bottom: 135px;
 }
 .features-list h3 {
 	font-size: 24px;
@@ -269,9 +276,12 @@ a.main-header-logo:focus {
 	padding: 0;
 
 	margin-top: 20px;
-	margin-bottom: 17px;
+	margin-bottom: 15px;
 }
 .features-list p {
+	display: block;
+
+	width: 260px;
 	font-size: 16px;
 	line-height: 24px;
 	color: #283136;
@@ -353,10 +363,13 @@ a.main-header-logo:focus {
 	margin: 0;
 	padding: 0;
 
-	margin-bottom: 35px;
-	margin-top: 37px
+	margin-bottom: 30px;
+    margin-top: 35px;
 }
 .info-lead {
+	display: block;
+	width: 660px;
+
 	font-size: 16px;
 	line-height: 24px;
 
@@ -365,7 +378,7 @@ a.main-header-logo:focus {
 	margin: 0;
 	padding: 0;
 
-	margin-bottom: 38px;
+	margin-bottom: 40px;
 }
 .info-features {
 	list-style: none;
@@ -376,7 +389,7 @@ a.main-header-logo:focus {
 .info-features li {
 	position: relative;
 
-	margin-left: 40px;
+	margin-left: 35px;
 	margin-bottom: 25px;
 }
 
@@ -385,7 +398,7 @@ a.main-header-logo:focus {
 	position: absolute;
 
 	top: 10px;
-	left: -40px;
+	left: -35px;
 
 	width: 25px;
 	height: 2px;
@@ -401,18 +414,32 @@ a.main-header-logo:focus {
 	margin: 0;
 	padding: 0;
 
-	margin-bottom: 25px;
+	margin-bottom: 24px;
 }
 .info-logo {
-	margin-bottom: 32px;
+	margin-bottom: 30px;
+}
+.info-stats b {
+	display: block;
+
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	margin: 0;
+	padding: 0;
+	margin-left: 15px;
+	margin-bottom: 24px;
 }
 .info-stats-table {
 	width: 100%;
-
+	margin: 0;
+	padding: 0;
 	margin-top: 40px;
 }
 .info-stats-table td {
-	padding: 18px 7px 18px 0;
+	padding: 18px 20px 18px 0;
 }
 .table-percent {
 	font-size: 45px;
@@ -424,7 +451,7 @@ a.main-header-logo:focus {
 	line-height: 10.06px;
 	font-weight: 700;
 
-	vertical-align: top;/**/
+	vertical-align: top;/*не выравнивается по верхнему краю*/
 }
 .table-text {
 	font-size: 16px;
@@ -465,6 +492,7 @@ a.main-header-logo:focus {
 /*catalog*/
 .inner-page .header {
 	margin-bottom: 54px;
+	min-height: 355px;
 }
 .page-title {
 	font-size: 55px;
@@ -565,30 +593,6 @@ a.main-header-logo:focus {
 .filters-col {
 	width: 260px;
 
-}
-.catalog-list {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0;
-	margin: 0;
-}
-.catalog-col{
-	width: 760px;
-}
-.catalog-colums {
-	display: flex;
-	justify-content: space-between;
-}
-.catalog-item {
-	width: 360px;
-	margin-bottom: 33px;
-	margin-right: 40px;
-}
-.catalog-item:hover {
-	box-shadow: 0 6px 15px rgba(0,1,1,.25);
-}
-.catalog-item:nth-child(2n) {
-	margin-right: 0px;
 }
 
 .filter ul {
@@ -768,34 +772,109 @@ a.main-header-logo:focus {
 	color: #000000;
 }
 
-.catalog-item a {
+.catalog-list {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+}
+.catalog-col{
+	width: 760px;
+}
+.catalog-colums {
+	display: flex;
+	justify-content: space-between;
+}
+.catalog-item {
+	position: relative;
+	width: 360px;
+	margin-bottom: 33px;
+	margin-right: 40px;
+}
+.catalog-item-info {
+	position: absolute;
+	margin: 0;
+	width: 240px;
+	height: 160px;
+	background-color: #eeeeee;
+	padding: 28px 60px 43px 60px;
+}
+.catalog-item::before {
+	content: "";
+	display: block;
+	width: 360px;
+	height: 40px;
+
+	background-image: url(../img/browser.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	opacity: 0.12;
+}
+.catalog-item:hover {
+	box-shadow: 0 6px 15px rgba(0,1,1,.25);
+}
+.catalog-item:hover::before {
+
+	opacity: 1;
+}
+.catalog-item h3 {
+	margin: 0;
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 700;
-	text-align: center; 
+	align-items: center;
+	margin-left: 83px;
+	margin-bottom: 15px;
 	text-transform: uppercase;
+}
+.catalog-item-title a{
 	color: #000000;
 }
-.catalog-item p {
+.catalog-item-info p {
+	margin: 0;
+	
 	color: #666666;
-	line-height: 16px;
+	font-size: 16px;
 	line-height: 18px;
-	text-align: center;
+
+	align-items: center;
+
+	margin-left: 32px;
+	margin-bottom: 45px;
 }
+
 .catalog-btn {
+	border: none;
+	border-radius: 3px;
 	background-color: #fb565a;
 	color: #ffffff;
 	font-size: 16px;
 	line-height: 18px;
 	text-align: center;
 	text-transform: uppercase;
+
+	padding: 15px 60px;
+
+	margin-bottom: 50px;
+	margin-left: 20px;
 }
 .catalog-btn:hover {
+	background-color: #fb565a;
+	color: #ffffff;
+}
+.catalog-btn:focus {
 	background-color: #e74246;
+	
 }
-.catalog-btn:focus{
+.catalog-btn:active {
 	background-color: #d7373b;
+
 }
+
+.catalog-item:nth-child(2n) {
+	margin-right: 0px;
+}
+
 
 .pagination-list {
 	display: flex;
@@ -845,13 +924,14 @@ a.main-header-logo:focus {
 .footer {
 	color: #000000;
 	background-color: #ffffff;
-	margin-top: 80px;
+	margin-top: 110px;
 }
-/*карта вылезает за макет*/
+/*карта по пп не совпадает*/
 .map {
 	background-image: url(../img/map.jpg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	background-size: cover;/*растягиваем фон*/
 
 	width: 100%;
 	height: 416px;
@@ -862,7 +942,6 @@ a.main-header-logo:focus {
 	width: 319px;
 	height: 308px;
 	background-color: #ffffff;
-	left: 140px;
 	top: 55px;
 }
 .write-title {
@@ -913,7 +992,6 @@ a.main-header-logo:focus {
 	justify-content: flex-start;
 }
 .footer-text {
-
 	width: 560px;
 }
 .footer-text-title {
