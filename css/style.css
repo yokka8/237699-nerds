@@ -119,7 +119,7 @@ a.main-header-logo:focus {
 }
 .slide {
 	display: none;
-	padding: 70px 0 80px 0;	/*не поняла как их измерили*/
+	padding: 67px 0 80px 0;	
 }
 .slide:nth-child(1) {
 	display: block; 
@@ -127,7 +127,7 @@ a.main-header-logo:focus {
 .slide:nth-child(1) {
 	background-image: url("../img/slider-1.png");
 	background-repeat: no-repeat;
-	background-position: 93% 18px;
+	background-position: 433px 9px;
 }
 .slide:nth-child(2) {
 	background-image: url("../img/slider-2.png");
@@ -140,7 +140,7 @@ a.main-header-logo:focus {
 	background-position: 100% 20px;
 }
 .slide h3 {
-	width: 600px;/*как померить ширину*/
+	width: 600px;
 	margin: 0;
 	margin-bottom: 27px;
 
@@ -149,6 +149,8 @@ a.main-header-logo:focus {
 	font-weight: 500;
 }
 .slide p {
+	font-size: 16px;
+	line-height: 24px;
 	margin: 0;
 	margin-bottom: 40px;
 	max-width: 430px;
@@ -180,15 +182,15 @@ a.main-header-logo:focus {
 .slide-button:active {
 	background-color: #d7373b;
 	color: rgba(255,255,255,0.3);
-	box-shadow: 0 3px rgba(0,0,0,0.1)/*не поняла*/
+	box-shadow: 0 3px rgba(0,0,0,0.1)
 }
 
-/*не разберусь*/
+
 .slider-controls {
 	position: absolute;
 	left: 50%;
 	bottom: 104px;
-	z-index: 100; /*????*/
+	z-index: 100; 
 
 	width: 160px;
 	height: 18px;
@@ -203,10 +205,10 @@ a.main-header-logo:focus {
 	display: inline-block;
 	width: 18px;
 	height: 18px;
-	padding: 8px; /*Переключатели маленькие, поэтому мы увеличим зону нажатия с помощью паддинга.
+	padding: 8px; 
 */
 	border-radius: 50%; 
-	cursor: pointer; /*дадим курсор «указатель».*/
+	cursor: pointer; 
 }
 
 .slider-controls i::after {
@@ -255,17 +257,14 @@ a.main-header-logo:focus {
 
 	display: flex;
 	justify-content: flex-start;
-
-	background-image: url(..//img/grey_line.png);
-	background-position: 0 428px;
-	background-repeat: no-repeat;
+	border-bottom: 2px solid #eeeeee;
 }
 
 .features-item {
 	width: 300px;
 
 	margin-right: 100px;
-	margin-bottom: 135px;
+	margin-bottom: 95px;
 }
 .features-list h3 {
 	font-size: 24px;
@@ -341,14 +340,13 @@ a.main-header-logo:focus {
 .info {
 	display: flex;
 	justify-content: space-between;
-
-	background-image: url(..//img/grey_line.png);
-	background-position: bottom;
-	background-repeat: no-repeat;
+	margin-top: 40px;
+	padding-bottom: 48px;
+    border-bottom: 2px solid #eeeeee;
 }
 
 .info-description {
-	width: 660px;
+	width: 700px;
 }
 .info-stats {
 	width: 360px;
@@ -363,8 +361,7 @@ a.main-header-logo:focus {
 	margin: 0;
 	padding: 0;
 
-	margin-bottom: 30px;
-    margin-top: 35px;
+	margin: 34px 0;
 }
 .info-lead {
 	display: block;
@@ -389,7 +386,7 @@ a.main-header-logo:focus {
 .info-features li {
 	position: relative;
 
-	margin-left: 35px;
+	margin-left: 37px;
 	margin-bottom: 25px;
 }
 
@@ -414,7 +411,7 @@ a.main-header-logo:focus {
 	margin: 0;
 	padding: 0;
 
-	margin-bottom: 24px;
+	margin-bottom: 23px;
 }
 .info-logo {
 	margin-bottom: 30px;
@@ -429,7 +426,7 @@ a.main-header-logo:focus {
 
 	margin: 0;
 	padding: 0;
-	margin-left: 15px;
+	margin-left: 17px;
 	margin-bottom: 24px;
 }
 .info-stats-table {
@@ -437,21 +434,22 @@ a.main-header-logo:focus {
 	margin: 0;
 	padding: 0;
 	margin-top: 40px;
+	border-collapse: collapse;
 }
 .info-stats-table td {
-	padding: 18px 20px 18px 0;
+	padding: 7px 24px 18px 0;
 }
 .table-percent {
 	font-size: 45px;
-	line-height: 10.06px;
+	line-height: 37px;
 	font-weight: 700;
 }
 .table-percent span {
 	font-size: 23px;
-	line-height: 10.06px;
+	line-height: 20px;
 	font-weight: 700;
 
-	vertical-align: top;/*не выравнивается по верхнему краю*/
+	vertical-align: top;
 }
 .table-text {
 	font-size: 16px;
@@ -459,40 +457,32 @@ a.main-header-logo:focus {
 	color: #283136;
 	font-weight: 400;
 }
-
+/*не могу выровнять(*/
 .carousel-list {
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
-	background-image: url(..//img/grey_line.png);
-	background-position: bottom;
-	background-repeat: no-repeat;
-
+	
 	margin: 0;
 	padding: 0;
 
-	margin-top: 100px;
-	margin-left: 30px;
+	border-bottom: 2px solid #eeeeee;
+    padding-top: 70px;
+    padding-bottom:58px;
+    padding-left: 33px;
 
 }
 .carousel-item {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	width: 260px;
-	height: 180px;
-}
-/*
-.carousel-item::before {
-	content: "";
-
-	width: 2px;
 	height: 52px;
-	color: #eeeeee;
-	transform: rotate(90deg);
-	top: 500px;
-	right: 30px;
-}*/
+	border-right: 2px solid #eeeeee;
+}
+.carousel-item:last-child {
+    border-right: none;
+}
 .carousel-item li {
 	width: 260px;
 }
@@ -958,14 +948,14 @@ a.main-header-logo:focus {
 .footer {
 	color: #000000;
 	background-color: #ffffff;
-	margin-top: 110px;
+	margin-top: 80px;
 }
 /*карта по пп не совпадает*/
 .map {
 	background-image: url(../img/map.jpg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	background-size: cover;/*растягиваем фон*/
+	background-size: cover;
 
 	width: 100%;
 	height: 416px;
@@ -986,8 +976,8 @@ a.main-header-logo:focus {
 	margin: 0;
 	padding: 0;
 
-	padding-left: 52px;
-	padding-top: 50px
+	padding-left: 50px;
+	padding-top: 51px;
 }
 
 .write-contact {
@@ -1000,7 +990,7 @@ a.main-header-logo:focus {
 	padding: 0;
 
 	padding-left: 50px;
-	padding-top: 25px; 
+	padding-top: 20px; 
 }
 
 .write-btn {
@@ -1015,11 +1005,9 @@ a.main-header-logo:focus {
 	background-color: #fb565a;
 	border: none;
 	width: 130px;
-	padding: 14px 47px;
+	padding: 14px 45px;
 	border-radius: 3px;
-	/*margin-bottom: 0;*/
-	margin: 30px 0 0 50px;
-	margin-bottom: 0;
+	margin: 36px 0 0 50px;
 }
 .footer-row .container {
 	display: flex;
