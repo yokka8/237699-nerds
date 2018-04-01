@@ -254,7 +254,7 @@ a.main-header-logo:focus {
 }
 .slide {
 	display: none;
-	padding: 67px 0 80px 0;	
+	padding: 67px 0 83px 0;	
 }
 .slide:nth-child(1) {
 	display: block; 
@@ -369,7 +369,7 @@ a.main-header-logo:focus {
 	width: 300px;
 
 	margin-right: 100px;
-	margin-bottom: 95px;
+	margin-bottom: 80px;
 }
 .features-list h3 {
 	font-size: 24px;
@@ -379,7 +379,7 @@ a.main-header-logo:focus {
 	margin: 0;
 	padding: 0;
 
-	margin-top: 20px;
+	margin-top: 19px;
 	margin-bottom: 15px;
 }
 .features-list p {
@@ -393,7 +393,7 @@ a.main-header-logo:focus {
 	margin: 0;
 	padding: 0;
 
-	margin-bottom: 45px;
+	margin-bottom: 34px;
 }
 
 .features-item a {
@@ -562,6 +562,9 @@ a.main-header-logo:focus {
 	color: #283136;
 	font-weight: 400;
 }
+.carousel {
+	margin-bottom: 80px
+}
 /*не могу выровнять(*/
 .carousel-list {
 	list-style: none;
@@ -584,21 +587,33 @@ a.main-header-logo:focus {
 	padding-right: 40px;
 	width: 260px;
 	height: 52px;
-	/*border: 2px solid #eeeeee;*/
+	border-right: 2px solid #eeeeee;
+}/*
+.carousel-list li {
+	position: relative;
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+}
+.carousel-item {
+
+    display: flex;
+    justify-content: center;
+	width: 260px;
+    height: 180px;
 }
 
-.carousel-item::after {
+.carousel-list li:not(:last-child)::after {
   content: "";
   position: absolute;
-  top: 0;
+  top: 63px;
   right: -20px;
   bottom: 0;
   width: 2px;
-  height: 52px;
-  margin: auto 0;
-  background-color: rgb(0, 0, 0);
-}
-
+  height: 55px;
+  background-color: #eeeeee;
+}*/
 .carousel-item li {
 	width: 260px;
 }
@@ -637,8 +652,8 @@ a.main-header-logo:focus {
 .filter-item {
 	margin: 0;
 	padding: 0;
-
 	border: none;
+	margin-bottom: 58px;
 }
 .range-filter {
 	width: 260px;
@@ -721,13 +736,12 @@ a.main-header-logo:focus {
 
 .filter ul {
 	margin: 0;
+	padding: 0;
 	margin-top: 15px;
 }
 .filter fieldset {
  	border: none;
-	margin: 0;
  	padding: 0;
- 	margin-bottom: 55px;
 }
 .filter legend {
 	padding: 0;
@@ -738,11 +752,22 @@ a.main-header-logo:focus {
   	font-weight: 700;
   	text-transform: uppercase;
 }
+.filter-item-cost {
+	letter-spacing: 0.03em;
+
+}
+.filter-grid {
+	margin-bottom: 25px;
+}
+.filter-features {
+	margin-bottom: 30px;
+}
 .filter-option {
 	position: relative;
 	display: block;
 
 	margin-bottom: 17px;
+	margin-left: 35px;
 }
 .filter-input {
 	font-size: 16px;
@@ -754,8 +779,8 @@ a.main-header-logo:focus {
 	content: "";
 	position: absolute;
 
-	left: -40px;
-	top: 0px;
+	left: -38px;
+	top: -3px;
 
 	width: 27px;
 	height: 25px;
@@ -772,8 +797,8 @@ a.main-header-logo:focus {
 	width: 27px;
 	height: 25px;
 
-	left: -40px;
-	top: 0px;
+	left: -38px;
+	top: -3px;
 
 	background-image: url(../img/radio-on.svg);
 	background-repeat: no-repeat;
@@ -787,8 +812,8 @@ a.main-header-logo:focus {
 	width: 27px;
 	height: 25px;
 
-	left: -40px;
-	top: 0;
+	left: -38px;
+	top: -3px;
 
 	background-image: url(../img/checkbox-off.svg);
 	background-repeat: no-repeat;
@@ -800,8 +825,8 @@ a.main-header-logo:focus {
 	position: absolute;
 	width: 27px;
 	height: 25px;
-	left: -40px;
-	top: 0;
+	left: -38px;
+	top: -3px;
 
 	background-image: url(../img/checkbox-on.svg);
 	background-repeat: no-repeat;
@@ -853,7 +878,9 @@ a.main-header-logo:focus {
 }
 .filters-block {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-top: 3px;
 }
 .sort {
 	font-size: 18px;
@@ -862,24 +889,28 @@ a.main-header-logo:focus {
 	font-weight: 700;
 	margin: 0;
 	padding: 0;
-	margin-right: 266px;
+
+	width: 400px;
 }
 
 .sorting-list {
 
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: flex-start;
 	padding: 0;
 	margin: 0;
 	margin-bottom: 57px;
-
+	width: 300px;
+ 	margin-right: 20px;
 	text-transform: uppercase;
-	width: 360px;
+	
 }
 .sorting-list li {
 
 	font-size: 14px;
 	line-height: 18px;
+	margin-right: 25px;
 
 }
 .sorting-list a {
@@ -899,9 +930,11 @@ a.main-header-logo:focus {
 
 .sorting-direction {
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	margin: 0;
 	padding: 0;
-	padding-left: 32px;
+	width: 40px
 }
 
 .sorting-link {
@@ -917,13 +950,14 @@ a.main-header-logo:focus {
 }
 
 .sorting-link {
-	padding-left: 15px;
+	/*padding-left: 15px;*/
 }
 .catalog-list {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0;
 	margin: 0;
+	margin-bottom: 30px;
 }
 .catalog-col{
 	width: 760px;
@@ -937,7 +971,7 @@ a.main-header-logo:focus {
 	position: relative;
 	width: 358px;
 	margin-bottom: 25px;
-	margin-right: 40px;
+	margin-right: 42px;
 }
 
 .catalog-item-info {
@@ -1042,6 +1076,7 @@ a.main-header-logo:focus {
 	margin: 0;
 	margin-bottom: 60px;
 	list-style: none;
+	margin-bottom: 60px
 }
 .pagination-item {
 	margin-right: 13px;
@@ -1083,7 +1118,7 @@ a.main-header-logo:focus {
 .footer {
 	color: #000000;
 	background-color: #ffffff;
-	margin-top: 80px;
+	/*margin-top: 80px;*/
 }
 /*карта по пп не совпадает*/
 .map {
