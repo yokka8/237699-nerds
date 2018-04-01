@@ -112,6 +112,7 @@ a {
 
 .social-button:focus {
 	background-color: #d7373b;
+	box-shadow: inset 0 3px 0 0 #c23235;
 }
 .social-button:hover path {
 	fill: #ffffff;
@@ -401,53 +402,13 @@ a.main-header-logo:focus {
 	font-size: 16px;
 	line-height: 18px;
 	text-transform: uppercase; 
-}/*
-.features-btn-red{
-	background-color: #fb565a;
-
-	padding: 15px 41px;
-	border-radius: 3px;
-
-	align-items: center;
-	vertical-align: middle;
 }
-.features-btn-red:hover {
-	background-color: #e74246;
-}
-.features-btn-red:focus {
-	background-color: #e74246
-	color: rgba(255,255,255,0.3);
-}
-.features-btn-green{
-	background-color: #00ca74;
-	padding: 15px 41px;
-	border-radius: 3px;
-}
-.features-btn-green:hover {
-	background-color: #00bc6c;
-}
-.features-btn-green:focus {
-	background-color: #00aa62;
-	color: rgba(255,255,255,0.3);
-}
-.features-btn-yellow {
-	background-color: #efc84a;
-	padding: 15px 41px;
-	border-radius: 3px;
-}
-.features-btn-yellow:hover {
-	background-color: #eab534;
-}
-.features-btn-yellow:focus {
-	background-color: #e5a722;
-	color: rgba(255,255,255,0.3);
-}*/
 .info {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 40px;
 	padding-bottom: 48px;
-    border-bottom: 2px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
 }
 
 .info-description {
@@ -565,59 +526,53 @@ a.main-header-logo:focus {
 .carousel {
 	margin-bottom: 80px
 }
-/*не могу выровнять(*/
-.carousel-list {
-	list-style: none;
-	display: flex;
-	justify-content: space-between;
-	
-	margin: 0;
-	padding: 0;
-
-	border-bottom: 2px solid #eeeeee;
-    padding-top: 70px;
-    padding-bottom:58px;
-    padding-left: 33px;
-
+.carousel {
+  margin: 0 auto;
+  width: 1160px;
+}
+.carousel-list  {
+  
+  display: flex;
+  
+  justify-content: space-between;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 80px;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
 }
 .carousel-item {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding-right: 40px;
-	width: 260px;
-	height: 52px;
-	border-right: 2px solid #eeeeee;
-}/*
-.carousel-list li {
 	position: relative;
-    list-style: none;
+}
+.carousel-item::after {
+  content: " ";
 
-    display: flex;
-    justify-content: space-between;
+  position: absolute;
+  right:-17px;
+  top:62px;
+
+  display: block;
+  width:3px;
+  height:52px;
+  background-color:#eeeeee;
+}
+
+.carousel-item:last-child::after {
+  content: none;
 }
 .carousel-item {
-
-    display: flex;
-    justify-content: center;
-	width: 260px;
-    height: 180px;
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  height: 180px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
 }
 
-.carousel-list li:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  top: 63px;
-  right: -20px;
-  bottom: 0;
-  width: 2px;
-  height: 55px;
-  background-color: #eeeeee;
-}*/
-.carousel-item li {
-	width: 260px;
-}
 .carousel-item a {
+	width: 100%;
 	opacity:  0.2; 
 }
 .carousel-item a:hover {
@@ -949,9 +904,7 @@ a.main-header-logo:focus {
 	opacity: 1.0;
 }
 
-.sorting-link {
-	/*padding-left: 15px;*/
-}
+
 .catalog-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -966,7 +919,7 @@ a.main-header-logo:focus {
 	display: flex;
 	justify-content: space-between;
 }
-/*у меня почему то этот блок по высоте не совпадает*/
+
 .catalog-item {
 	position: relative;
 	width: 358px;
@@ -983,7 +936,7 @@ a.main-header-logo:focus {
 	bottom: 0;
 	left: 0;
 	background-color: #eeeeee;
-	padding: 28px 60px 43px 60px;
+	padding: 28px 60px 50px 60px;
 }
 
 .catalog-item::before {
@@ -1023,6 +976,8 @@ a.main-header-logo:focus {
 	color: #000000;
 }
 .catalog-item-info p {
+	width: 200px;
+	text-align: center;
 	margin: 0;
 	
 	color: #666666;
@@ -1031,7 +986,7 @@ a.main-header-logo:focus {
 
 	align-items: center;
 
-	margin-left: 32px;
+	margin-left: 20px;
 	margin-bottom: 45px;
 }
 
@@ -1233,6 +1188,7 @@ a.main-header-logo:focus {
 
 	width: 760px;
 	padding: 70px 100px 84px 100px;
+	
 
 	display: none;
 }
@@ -1257,8 +1213,11 @@ a.main-header-logo:focus {
   	flex-wrap: wrap;
   	justify-content: space-between;
 }
-.appointment-form label {
+.modal-show {
 	display: block;
+}
+.appointment-form label {
+	display: none;
 	margin: 0;
 	font-size: 16px;
 	line-height: 18px;
@@ -1268,7 +1227,7 @@ a.main-header-logo:focus {
 .appointment-form input[type="text"],
 .appointment-form input[type="email"] {
 	box-sizing: border-box;
-	width: 359px; /*100%?*/
+	width: 359px;
 	padding: 10px 10px;
 }
 .appointment-form textarea {
@@ -1284,25 +1243,33 @@ a.main-header-logo:focus {
 	color: rgba(68,68,68,0.5);
 	border: 2px solid #d7dcde;
 }
-
-.appointment-form input:hover,
-.appointment-form input:hover,
+.appointment-form input[type="text"]:hover,
+.appointment-form input[type="email"]:hover,
 .appointment-form textarea:hover {
-	border-color: #b4b9bb; 
-	color: rgba(68,68,68, 0.5);
+	border: 2px solid #b4b9bb;
 }
 
-.appointment-form input:focus,
-.appointment-form input:focus,
+.appointment-form input[type="text"]:focus,
+.appointment-form input[type="email"]:focus,
 .appointment-form textarea:focus {
-	border-color: #000000;
-	color: #444444;
+	border: 2px solid #000000;
+	color: #000000;
+}
 
+.appointment-form input[type="text"]:invalid,
+.appointment-form input[type="email"]:invalid,
+.appointment-form textarea:invalid {
+	border: 2px solid #e74246;
+	color: #e74246;
 }
 .modal-write-btn {
 	width: 260px;
 	padding: 13px;
 	border-radius: 3px;
+	background-color: #fb565a;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 18px;
 }
 .modal-close {
 	position: absolute;
