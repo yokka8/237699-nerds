@@ -773,7 +773,7 @@ a.main-header-logo:focus {
 	color: #283136;
 }
 
-.filter-radio +label::before {
+.filter-radio + label::before {
 	content: "";
 	position: absolute;
 
@@ -788,7 +788,7 @@ a.main-header-logo:focus {
 	background-position: 0 0;
 	opacity: 0.4;
 }
-.filter-radio:checked +label::before {
+.filter-radio:checked + label::before {
 	content: "";
 	position: absolute;
 
@@ -803,7 +803,7 @@ a.main-header-logo:focus {
 	background-position: 0 0;
 	opacity: 0.4;
 }
-.filter-checkbox +label::before {
+.filter-checkbox + label::before {
 	content: "";
 	position: absolute;
 
