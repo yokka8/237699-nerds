@@ -1,3 +1,18 @@
+.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -webkit-linear-gradient(top, white, black);
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -132,7 +147,7 @@ a {
 }
 .write-btn {
 	min-width: 189px;
-  	margin: 36px 0 0 50px;
+  	
 }
 /*Кнопки*/
 .header {
@@ -296,7 +311,7 @@ a.main-header-logo:focus {
 .slide h3 {
 	width: 600px;
 	margin: 0;
-	margin-bottom: 27px;
+	margin-bottom: 28px;
 
 	font-size: 55px;
 	line-height: 55px;
@@ -421,7 +436,7 @@ a.main-header-logo:focus {
 	margin: 0;
 	padding: 0;
 
-	margin-bottom: 34px;
+	margin-bottom: 33px;
 }
 
 .features-item a {
@@ -458,7 +473,8 @@ a.main-header-logo:focus {
 	margin: 0;
 	padding: 0;
 
-	margin: 34px 0;
+	margin-top: 35px;
+	margin-bottom: 33px;
 }
 .info-lead {
 	display: block;
@@ -472,7 +488,7 @@ a.main-header-logo:focus {
 	margin: 0;
 	padding: 0;
 
-	margin-bottom: 40px;
+	margin-bottom: 39px;
 }
 .info-features {
 	list-style: none;
@@ -483,8 +499,8 @@ a.main-header-logo:focus {
 .info-features li {
 	position: relative;
 
-	margin-left: 37px;
-	margin-bottom: 25px;
+	margin-left: 36px;
+	margin-bottom: 24px;
 }
 
 .info-features li::before {
@@ -492,7 +508,7 @@ a.main-header-logo:focus {
 	position: absolute;
 
 	top: 10px;
-	left: -35px;
+	left: -37px;
 
 	width: 25px;
 	height: 2px;
@@ -523,7 +539,7 @@ a.main-header-logo:focus {
 
 	margin: 0;
 	padding: 0;
-	margin-left: 17px;
+	margin-left: 16px;
 	margin-bottom: 24px;
 }
 .info-stats-table {
@@ -534,7 +550,7 @@ a.main-header-logo:focus {
 	border-collapse: collapse;
 }
 .info-stats-table td {
-	padding: 7px 24px 18px 0;
+	padding: 7px 23px 15px 0;
 }
 .table-percent {
 	font-size: 45px;
@@ -630,7 +646,7 @@ a.main-header-logo:focus {
 
 /*catalog*/
 .inner-page .header {
-	margin-bottom: 56px;
+	margin-bottom: 79px;
 	min-height: 355px;
 }
 .page-title {
@@ -1182,15 +1198,16 @@ a.main-header-logo:focus {
 	
 }
 .map iframe {
-	position: absolute;
+	width: 100%;
 	border: 0;
 	z-index: 0;
 }
 
 .write-us {
-	position: relative;
-	width: 319px;
-	height: 308px;
+	position: absolute;
+	width: 220px;
+	height: 210px;
+	padding: 49px 49px;
 	background-color: #ffffff;
 	top: 55px;
 	z-index: 1;
@@ -1202,24 +1219,27 @@ a.main-header-logo:focus {
 	font-weight: 700;
 	margin: 0;
 	padding: 0;
-
-	padding-left: 50px;
-	padding-top: 48px;
 }
 
 .write-contact {
-	display: block;
 	width: 210px;
+	display: block;
 	color: #666666;
 	font-size: 16px;
 	line-height: 18px;
 	margin: 0;
 	padding: 0;
 
-	padding-left: 50px;
-	padding-top: 23px; 
+	margin-top: 24px; 
 	letter-spacing: 0.01em;
 }
+.write-contact-1 {
+	margin-bottom: 18px;
+}
+.write-contact-2 {
+	margin-bottom: 37px;
+}
+
 .footer-row .container {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1240,7 +1260,7 @@ a.main-header-logo:focus {
 	margin: 0;
 	padding: 0;
 
-	margin-top: 78px; 
+	margin-top: 77px; 
 }
 
 .footer-text-description {
