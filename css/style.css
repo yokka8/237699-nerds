@@ -631,7 +631,7 @@ a.main-header-logo:focus {
 
 /*catalog*/
 .inner-page .header {
-	margin-bottom: 79px;
+	margin-bottom: 57px;
 	min-height: 355px;
 }
 .page-title {
@@ -1295,97 +1295,87 @@ a.main-header-logo:focus {
 }
 
 /*ФОРМА*/
+
 @-webkit-keyframes bounce {
 	0% {
-    -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px);
+		margin-top: 100%;
   	}
 
-  	70% {
-    	-webkit-transform: translateY(30px);
-    	        transform: translateY(30px);
-  	}
-
-  	90% {
-    	-webkit-transform: translateY(-10px);
-    	        transform: translateY(-10px);
-  	}
-
-  	100% {
-    	-webkit-transform: translateY(0);
-    	        transform: translateY(0);
-  	}
+	70% {
+		margin-top: 70%;
 	}
+
+	90% {
+		margin-top: 50%;
+	}
+
+	100% {
+		margin-top: 0%;
+	}
+	}
+
 @keyframes bounce {
 	0% {
-    -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px);
+		margin-top: 100%;
   	}
 
-  	70% {
-    	-webkit-transform: translateY(30px);
-    	        transform: translateY(30px);
-  	}
-
-  	90% {
-    	-webkit-transform: translateY(-10px);
-    	        transform: translateY(-10px);
-  	}
-
-  	100% {
-    	-webkit-transform: translateY(0);
-    	        transform: translateY(0);
-  	}
+	70% {
+		margin-top: 70%;
 	}
 
+	90% {
+		margin-top: 50%;
+	}
+
+	100% {
+		margin-top: 0%;
+	}
+	}
+
+
 @-webkit-keyframes shake {
-  	0%,
-  	100% {
-    	-webkit-transform: translateX(0);
-    	        transform: translateX(0);
-  	}
+	0%,
+	100% {
+		margin: 0%;
+	}
 
-  	10%,
-  	30%,
-  	50%,
-  	70%,
-  	90% {
-    	-webkit-transform: translateX(-10px);
-    	        transform: translateX(-10px);
-  	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		margin: 10px;
+	}
 
-  	20%,
-  	40%,
-  	60%,
-  	80% {
-    	-webkit-transform: translateX(10px);
-    	        transform: translateX(10px);
-  	}
+	20%,
+	40%,
+	60%,
+	80% {
+		margin: -10px;
+	}
 }
 
+
 @keyframes shake {
-  	0%,
-  	100% {
-    	-webkit-transform: translateX(0);
-    	        transform: translateX(0);
-  	}
+	0%,
+	100% {
+		margin: 0%;
+	}
 
-  	10%,
-  	30%,
-  	50%,
-  	70%,
-  	90% {
-    	-webkit-transform: translateX(-10px);
-    	        transform: translateX(-10px);
-  	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		margin: 10px;
+	}
 
-  	20%,
-  	40%,
-  	60%,
-  	80% {
-    	-webkit-transform: translateX(10px);
-    	        transform: translateX(10px);
-  	}
+	20%,
+	40%,
+	60%,
+	80% {
+		margin: -10px;
+	}
 }
 
 .modal {
@@ -1420,8 +1410,8 @@ a.main-header-logo:focus {
 .modal-info {
 	margin: 0;
 	padding: 0;
-	padding-left: 100px;
-	padding-top: 65px;
+	padding-left: 96px;
+	padding-top: 72px;
 	padding-bottom: 40px;
 
 	font-size: 45px;
@@ -1512,15 +1502,22 @@ a.main-header-logo:focus {
 }
 .modal-close {
 	position: absolute;
+	background-image: url("../img/close-cross.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    font-size: 0;
 	top: 78px;
-	right: 100px;
+	right: 90px;
 
 	width: 28px;
 	height: 28px;
+
 	font-size: 0;
-	border: 0;
+	border: none;
 	cursor: pointer;
 	opacity: 0.3;
+
 }
 .modal-close:hover {
 	opacity: 1;
@@ -1529,24 +1526,4 @@ a.main-header-logo:focus {
 .modal-close:active {
 	opacity: 0.1;
 	border: none;
-}
-.modal-close::before,
-.modal-close::after {
-	content: "";
-
-	position: absolute;
-
-	width: 25px;
-	height: 3px;
-	background-color: #fecccd;
-}
-.modal-close::before {
-	-webkit-transform: rotate(45deg);
-	    -ms-transform: rotate(45deg);
-	        transform: rotate(45deg);
-}
-.modal-close::after {
-	-webkit-transform: rotate(-45deg);
-	    -ms-transform: rotate(-45deg);
-	        transform: rotate(-45deg);
 }
