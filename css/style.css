@@ -332,7 +332,7 @@ a.main-header-logo:focus
 {
     display: none;
 
-    padding: 67px 0 83px 0;
+    padding: 67px 0 80px 0;
 }
 .slide:nth-child(1)
 {
@@ -669,7 +669,7 @@ a.main-header-logo:focus
     display: flex;
 
     margin-top: 0;
-    margin-bottom: 76px;
+    margin-bottom: 79px;
     padding: 0;
 
     border-top: 2px solid #eee;
@@ -1084,7 +1084,7 @@ a.main-header-logo:focus
     width: 300px;
     margin: 0;
     margin-right: 20px;
-    margin-bottom: 57px;
+    margin-bottom: 55px;
     padding: 0;
 
     text-transform: uppercase;
@@ -1129,6 +1129,7 @@ a.main-header-logo:focus
     width: 40px;
     margin: 0;
     padding: 0;
+    margin-top: -3px;
 
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -1319,7 +1320,7 @@ a.main-header-logo:focus
     display: flex;
 
     margin: 0;
-    margin-bottom: 56px;
+    margin-bottom: 58px;
     padding: 0;
 
     list-style: none;
@@ -1480,7 +1481,7 @@ a.main-header-logo:focus
     line-height: 36px;
 
     margin: 0;
-    margin-top: 77px;
+    margin-top: 78px;
     padding: 0;
 
     color: #000;
